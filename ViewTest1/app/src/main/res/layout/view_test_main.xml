@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView android:id="@+id/id_test_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hihihihi123123"
+            android:textColor="#F00"
+            android:textSize="20dp"
+            android:textStyle="normal"
+            android:typeface="sans">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="hihihihi123123asdasdasfasfafasfasfasfasfasfasfa"
+            android:textColor="#00F"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:typeface="monospace">
+
+        </TextView>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="input number"
+            android:textColorHint="#F00"
+            android:inputType="number"
+            android:editable="true">
+        </EditText>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click Me"
+            android:onClick="onButtonClick">
+        </Button>
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="veiw1TouchMode"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+        </Button>
+        <Button android:id="@+id/btnView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="veiw2">
+        </Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="veiw3">
+        </Button>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

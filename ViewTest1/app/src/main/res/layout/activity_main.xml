@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="right|bottom"
+            tools:ignore="MissingConstraints">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button_01">
+            </Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button_02"
+                android:layout_gravity="top">
+            </Button>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="right"
+            android:ignoreGravity="@+id/view2"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:text="R_View1">
+            </Button>
+
+            <Button android:id="@id/view2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R_View2">
+            </Button>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#FF0"
+            android:foreground="@drawable/ic_launcher_foreground"
+            android:foregroundGravity="right|bottom">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:text="F_View1">
+            </Button>
+        </FrameLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#FF0"
+            android:collapseColumns="0">
+            <TableRow>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View1X1">
+                </Button>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View1X2">
+                </Button>
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View2X1">
+                </Button>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View2X2">
+                </Button>
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
